@@ -16,7 +16,7 @@ contract LimeToken is ERC20, ERC20Detailed {
     /**
      * @dev Constructor that gives msg.sender all of existing tokens.
      */
-    constructor () public ERC20Detailed("LimeToken", "LIME", 18) {
+    constructor () public ERC20Detailed("LimeToken", "LIME", 6) {
         _mint(msg.sender, 10000000000 * (10 ** uint256(decimals())));
     }
 }
